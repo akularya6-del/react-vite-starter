@@ -43,7 +43,7 @@ const Capabilities: React.FC = () => {
       <div className="relative z-10 px-8 md:px-16 lg:px-20 pt-24 pb-10 flex flex-col min-h-screen">
         {/* Header */}
         <div className="mb-auto">
-          <p className="text-sm font-body text-white/80 mb-6">// Capabilities</p>
+          <p className="text-sm font-studio text-white/80 mb-6">// Capabilities</p>
           <h2 className="font-heading italic text-6xl md:text-7xl lg:text-[6rem] leading-[0.9] tracking-[-3px] text-white">
             Studio craft,
             <br />
@@ -67,7 +67,7 @@ const Capabilities: React.FC = () => {
                   {card.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="liquid-glass rounded-full px-3 py-1 text-[11px] text-white/90 font-body whitespace-nowrap"
+                      className="liquid-glass rounded-full px-3 py-1 text-[11px] text-white/90 font-studio whitespace-nowrap"
                     >
                       {tag}
                     </span>
@@ -83,7 +83,7 @@ const Capabilities: React.FC = () => {
                 <h3 className="font-heading italic text-3xl md:text-4xl tracking-[-1px] leading-none text-white">
                   {card.title}
                 </h3>
-                <p className="text-sm text-white/90 font-body font-light leading-snug max-w-[32ch] mt-3">
+                <p className="text-sm text-white/90 font-studio font-light leading-snug max-w-[32ch] mt-3">
                   {card.body}
                 </p>
               </div>

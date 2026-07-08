@@ -40,12 +40,12 @@ const Hero: React.FC = () => {
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="px-3 py-2 text-sm font-medium text-white/90 font-body hover:text-white transition-colors"
+                className="px-3 py-2 text-sm font-medium text-white/90 font-studio hover:text-white transition-colors"
               >
                 {link}
               </a>
             ))}
-            <button className="flex items-center gap-1 bg-white text-black px-4 py-2 rounded-full text-sm font-medium font-body ml-1">
+            <button className="flex items-center gap-1 bg-white text-black px-4 py-2 rounded-full text-sm font-medium font-studio ml-1">
               Start a Project
               <ArrowUpRight className="w-4 h-4" />
             </button>
@@ -64,10 +64,10 @@ const Hero: React.FC = () => {
             transition={blurFadeTransition(0.4)}
             className="liquid-glass rounded-full flex items-center gap-2 px-4 py-2"
           >
-            <span className="bg-white text-black text-xs font-semibold font-body px-2 py-0.5 rounded-full">
+            <span className="bg-white text-black text-xs font-semibold font-studio px-2 py-0.5 rounded-full">
               New
             </span>
-            <span className="text-white/90 text-sm font-body">
+            <span className="text-white/90 text-sm font-studio">
               Booking Q3 2026 engagements — limited capacity
             </span>
           </motion.div>
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
             initial={blurFadeInitial}
             animate={blurFadeAnimate}
             transition={blurFadeTransition(0.8)}
-            className="text-sm md:text-base text-white max-w-2xl font-body font-light leading-tight mt-4"
+            className="text-sm md:text-base text-white max-w-2xl font-studio font-light leading-tight mt-4"
           >
             We are a small studio of designers and engineers shaping brand-defining
             websites for ambitious companies. Precise typography, cinematic motion, and
@@ -99,11 +99,11 @@ const Hero: React.FC = () => {
             transition={blurFadeTransition(1.1)}
             className="mt-6 flex items-center gap-6"
           >
-            <button className="liquid-glass-strong rounded-full px-5 py-2.5 flex items-center gap-2 text-white font-body text-sm font-medium">
+            <button className="liquid-glass-strong rounded-full px-5 py-2.5 flex items-center gap-2 text-white font-studio text-sm font-medium">
               Start a Project
               <ArrowUpRight className="w-4 h-4" />
             </button>
-            <button className="flex items-center gap-2 text-white font-body text-sm font-medium">
+            <button className="flex items-center gap-2 text-white font-studio text-sm font-medium">
               <Play className="w-4 h-4" />
               Watch Showreel
             </button>
@@ -121,7 +121,7 @@ const Hero: React.FC = () => {
               <div className="text-4xl font-heading italic tracking-[-1px] leading-none mt-4">
                 6 Weeks
               </div>
-              <div className="text-xs text-white/80 font-body mt-2">
+              <div className="text-xs text-white/80 font-studio mt-2">
                 Average End-to-End Launch Time
               </div>
             </div>
@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
               <div className="text-4xl font-heading italic tracking-[-1px] leading-none mt-4">
                 140+
               </div>
-              <div className="text-xs text-white/80 font-body mt-2">
+              <div className="text-xs text-white/80 font-studio mt-2">
                 Brands Shipped Across Four Continents
               </div>
             </div>
@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
           className="flex flex-col items-center gap-4 pb-8"
         >
           <div className="liquid-glass rounded-full px-5 py-2">
-            <span className="text-white/90 text-sm font-body">
+            <span className="text-white/90 text-sm font-studio">
               Trusted by founders, operators, and creative directors worldwide
             </span>
           </div>

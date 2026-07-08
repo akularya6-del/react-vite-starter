@@ -49,6 +49,7 @@ export default {
       fontFamily: {
         heading: ["'Instrument Serif'", 'serif'],
         body: ["'Inter'", 'sans-serif'],
+        studio: ["'Barlow'", 'sans-serif'],
       },
     },
   },
