@@ -17,9 +17,10 @@ const logos = ['Aeon', 'Vela', 'Apex', 'Orbit', 'Zeno']
 
 interface HeroProps {
   onStartProject?: () => void;
+  onWatchShowreel?: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onStartProject }) => {
+const Hero: React.FC<HeroProps> = ({ onStartProject, onWatchShowreel }) => {
   return (
     <section className="h-screen overflow-hidden bg-black relative">
       {/* Background Video */}
@@ -113,7 +114,10 @@ const Hero: React.FC<HeroProps> = ({ onStartProject }) => {
               Start a Project
               <ArrowUpRight className="w-4 h-4" />
             </button>
-            <button className="flex items-center gap-2 text-white font-studio text-sm font-medium">
+            <button 
+              onClick={onWatchShowreel}
+              className="flex items-center gap-2 text-white font-studio text-sm font-medium"
+            >
               <Play className="w-4 h-4" />
               Watch Showreel
             </button>
