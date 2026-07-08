@@ -124,7 +124,7 @@ const Hero: React.FC<HeroProps> = ({ onStartProject }) => {
             initial={blurFadeInitial}
             animate={blurFadeAnimate}
             transition={blurFadeTransition(1.3)}
-            className="mt-8 flex gap-4"
+            className="mt-8 flex flex-col sm:flex-row gap-4"
           >
             <div className="liquid-glass p-5 w-[220px] rounded-[1.25rem] text-left">
               <ClockIcon className="w-5 h-5 text-white/80" />
@@ -152,14 +152,14 @@ const Hero: React.FC<HeroProps> = ({ onStartProject }) => {
           initial={blurFadeInitial}
           animate={blurFadeAnimate}
           transition={blurFadeTransition(1.4)}
-          className="flex flex-col items-center gap-4 pb-8"
+          className="flex flex-col items-center gap-4 pb-8 px-4"
         >
           <div className="liquid-glass rounded-full px-5 py-2">
             <span className="text-white/90 text-sm font-studio">
               Trusted by founders, operators, and creative directors worldwide
             </span>
           </div>
-          <div className="flex items-center gap-12 md:gap-16">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-16 mt-2">
             {logos.map((name) => (
               <span
                 key={name}
