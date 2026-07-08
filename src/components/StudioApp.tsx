@@ -2,10 +2,14 @@ import React from 'react';
 import Hero from './Hero';
 import Capabilities from './Capabilities';
 
-const StudioApp: React.FC = () => {
+interface StudioAppProps {
+  onBack: () => void;
+}
+
+const StudioApp: React.FC<StudioAppProps> = ({ onBack }) => {
   return (
     <>
-      <Hero />
+      <Hero onStartProject={onBack} />
       <Capabilities />
     </>
   );

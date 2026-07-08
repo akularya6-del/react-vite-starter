@@ -6,7 +6,7 @@ const App: React.FC = () => {
   const [showStudio, setShowStudio] = useState(false);
 
   return showStudio ? (
-    <StudioApp />
+    <StudioApp onBack={() => setShowStudio(false)} />
   ) : (
     <LandingHero onBeginJourney={() => setShowStudio(true)} />
   );

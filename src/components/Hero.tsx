@@ -15,7 +15,11 @@ const blurFadeTransition = (delay: number) => ({
 const navLinks = ['Work', 'Studio', 'Services', 'Journal', 'Contact']
 const logos = ['Aeon', 'Vela', 'Apex', 'Orbit', 'Zeno']
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  onStartProject?: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onStartProject }) => {
   return (
     <section className="h-screen overflow-hidden bg-black relative">
       {/* Background Video */}
@@ -45,7 +49,10 @@ const Hero: React.FC = () => {
                 {link}
               </a>
             ))}
-            <button className="flex items-center gap-1 bg-white text-black px-4 py-2 rounded-full text-sm font-medium font-studio ml-1">
+            <button 
+              onClick={onStartProject}
+              className="flex items-center gap-1 bg-white text-black px-4 py-2 rounded-full text-sm font-medium font-studio ml-1"
+            >
               Start a Project
               <ArrowUpRight className="w-4 h-4" />
             </button>
@@ -99,7 +106,10 @@ const Hero: React.FC = () => {
             transition={blurFadeTransition(1.1)}
             className="mt-6 flex items-center gap-6"
           >
-            <button className="liquid-glass-strong rounded-full px-5 py-2.5 flex items-center gap-2 text-white font-studio text-sm font-medium">
+            <button 
+              onClick={onStartProject}
+              className="liquid-glass-strong rounded-full px-5 py-2.5 flex items-center gap-2 text-white font-studio text-sm font-medium"
+            >
               Start a Project
               <ArrowUpRight className="w-4 h-4" />
             </button>
